@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10, 12, 27);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    border-radius: 10%;
+    background-color: bisque;
+}
+
+.grid-item {
+    width: 19rem;
+    height: 19rem;
+    padding: 4.5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grid-item footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+}
+
+.grid-item h1,
+.grid-item footer h3 {
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: rgba(214, 208, 208, 0.904)
+}
+
+.grid-item h1 {
+    font-size: 2.75rem;
+}
+
+.grid-item footer h3 {
+    font-size: 2rem;
+}
+
+.grid-item footer p {
+    color: #C1C0D4;
+}
+
+.grid-item footer p,
+.grid-item footer h3 {
+    margin-bottom: 0.5rem;
+    margin-right: 6rem;
+    margin-left: 0;
+}
+
+.title {
+    color: rgba(214, 208, 208, 0.904);
+}
+
+.imgtxt {
+    width: 605px;
+    height: auto;
+    border-radius: 0 16px 16px 0;
+    padding: 0;
+    filter: invert(10%) sepia(23%) saturate(1000%) hue-rotate(240deg) brightness(70%) contrast(104%)
+}
+
+.darkcyan {
+    background-color: #1C1938;
+    border-radius: 10% 10% 0% 0%;
+}
+
+.texto {
+    margin-top: 2.5rem;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #C1C0D4;
+    text-align: left;
+    padding-right: 1rem;
+}
+
+.cadetblue {
+    background-color: #8448A9;
+    border-radius: 0% 0% 10% 10%;
+    overflow: hidden;
+    padding: 0;
+}
+
+@media (min-width: 992px) {
+    .grid {
+        grid-template-columns: 53% 47%;
+        grid-template-rows: 500px;
+        width: 1280px;
+    }
+    .darkcyan {
+        border-radius: 16px 0 0 16px;
+        width: 100%;
+        height: 100%;
+    }
+    .cadetblue {
+        border-radius: 0 16px 16px 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.attribution p,
+.attribution a {
+    color: ivory;
+    font-size: 1.2rem;
+    background-color: #0A0C1B;
+}
+
+.attribution p {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: lawngreen;
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    background-color: #0A0C1B;
+    position: absolute;
+    bottom: 1rem;
+    left: auto;
+    right: auto;
+    width: 100vw;
+}
